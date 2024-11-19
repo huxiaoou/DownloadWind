@@ -49,7 +49,7 @@ if __name__ == "__main__":
             engine = CDataEngineWindFutDailyBasis(
                 save_root_dir=pro_cfg.daily_data_root_dir,
                 save_data_info=pro_cfg.futures_basis,
-                unvrs_data_info=pro_cfg.futures_universe,
+                universe=pro_cfg.universe,
             )
             engine.download_data_range(bgn_date=bgn, stp_date=stp, calendar=calendar)
         elif args.switch == "stock":
@@ -58,7 +58,7 @@ if __name__ == "__main__":
             engine = CDataEngineWindFutDailyStock(
                 save_root_dir=pro_cfg.daily_data_root_dir,
                 save_data_info=pro_cfg.futures_stock,
-                unvrs_data_info=pro_cfg.futures_universe,
+                universe=pro_cfg.universe,
             )
             engine.download_data_range(bgn_date=bgn, stp_date=stp, calendar=calendar)
         else:
