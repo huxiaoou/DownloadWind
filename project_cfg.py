@@ -9,7 +9,6 @@ class CProCfg:
     calendar_path: str
     root_dir: str
     daily_data_root_dir: str
-    db_struct_path: str
     futures_basis: CSaveDataInfo
     futures_stock: CSaveDataInfo
     universe: list[str]
@@ -31,7 +30,6 @@ pro_cfg = CProCfg(
     calendar_path=r"SaveDir\Data\Calendar\cne_calendar.csv",
     root_dir=r"SaveDir\Data\tushare",
     daily_data_root_dir=r"SaveDir\Data\tushare\by_date",
-    db_struct_path=r"SaveDir\Data\tushare\db_struct.yaml",
     futures_basis=futures_basis,
     futures_stock=futures_stock,
     universe=[
