@@ -33,10 +33,8 @@ def parse_args():
 
 if __name__ == "__main__":
     from project_cfg import pro_cfg
-    from husfort.qlog import define_logger
-    from husfort.qcalendar import CCalendar
+    from qcalendar import CCalendar
 
-    define_logger()
     calendar = CCalendar(calendar_path=pro_cfg.calendar_path)
 
     args = parse_args()
